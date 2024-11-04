@@ -1,1 +1,148 @@
-Hello World
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation AREA</title>
+  <style>
+    /* Style global pour une interface moderne et agréable */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin: 0.2rem;
+    }
+    nav a:hover {
+      background-color: #4CAF50;
+      border-radius: 5px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+    h1, h2, h3 {
+      color: #4CAF50;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .highlight {
+      background-color: #ffeb3b;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #333;
+      color: white;
+    }
+    /* Styles responsives */
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.5rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        padding: 1rem;
+      }
+    }
+    @media (max-width: 480px) {
+      header {
+        padding: 0.5rem;
+      }
+      nav a {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+      .container {
+        margin: 1rem;
+        padding: 0.5rem;
+      }
+      footer {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bienvenue sur AREA - Simplifie ta vie !</h1>
+</header>
+
+<nav>
+  <a href="#intro">Introduction</a>
+  <a href="#homepage">Home Page</a>
+  <a href="#services">Services</a>
+  <a href="#dashboard">Dashboard</a>
+</nav>
+
+<div class="container">
+  <section id="intro" class="section">
+    <h2>Qu'est-ce que AREA ?</h2>
+    <p>AREA, c'est ta nouvelle meilleure amie pour éliminer toutes les tâches qui te prennent du temps pour rien. Avec notre configurateur d'action-réaction, tu peux automatiser plein de trucs en quelques clics. C'est simple, rapide, et surtout <span class="highlight">super pratique</span> !</p>
+  </section>
+
+  <section id="homepage" class="section">
+    <h2>Home Page</h2>
+    <p>Quand tu arrives sur la Home Page, tu as plusieurs options qui s'offrent à toi :</p>
+    <ul>
+      <li><strong>Accès au Dashboard</strong> - Clique ici pour gérer tes actions et réactions.</li>
+      <li><strong>Page des Services</strong> - Explore et connecte les différents services.</li>
+    </ul>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Les Services</h2>
+    <p>Sur la page des services, plusieurs catégories sont disponibles :</p>
+    <ul>
+      <li><strong>Section OAuth</strong> - Connecte AREA à d'autres services pour plus de possibilités.</li>
+      <li><strong>ActionModel</strong> - Crée des modèles d'action (c'est pour les développeurs ou pour nous, les pros de la plateforme).</li>
+      <li><strong>Action</strong> - Remplis des champs pour configurer une action en fonction de ton modèle d'action.</li>
+      <li><strong>ReactionModel</strong> - Pareil, mais pour les réactions.</li>
+      <li><strong>Reaction</strong> - Configure les réactions que tu veux en fonction de tes modèles.</li>
+      <li><strong>AREA</strong> - C'est là que la magie opère ! Crée ton service d'action-réaction en choisissant quelles actions et réactions tu veux lier.</li>
+    </ul>
+  </section>
+
+  <section id="dashboard" class="section">
+    <h2>Dashboard</h2>
+    <p>Le Dashboard, c'est l'endroit où tu peux créer des AREA facilement. Grâce à un système de <strong>nœuds</strong> que tu peux lier avec des traits (comme un jeu !), tout est pensé pour être accessible et intuitif, même si tu n'es pas un pro en tech.</p>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2024 AREA - Simplifie ta vie avec l'automatisation</p>
+</footer>
+
+</body>
+</html>
