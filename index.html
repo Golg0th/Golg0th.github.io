@@ -11,12 +11,12 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #646464;
+      color: #fff; /* Couleur du texte par défaut en blanc */
       line-height: 1.6;
     }
     header {
-      background-color: #8f00b3;
+      background-color: #8f00b3; /* Couleur du header */
       color: white;
       text-align: center;
       padding: 1rem;
@@ -36,7 +36,7 @@
       margin: 0.2rem;
     }
     nav a:hover {
-      background-color: #4CAF50;
+      background-color: #8f00b3;
       border-radius: 5px;
     }
     .container {
@@ -44,17 +44,27 @@
       margin: 2rem auto;
       padding: 1rem;
       box-sizing: border-box;
+      background-color: #444; /* Fond légèrement plus clair pour le conteneur */
+      border-radius: 8px; /* Coins arrondis pour un aspect plus moderne */
     }
     h1, h2, h3 {
-      color: #4CAF50;
+      color: #8f00b3; /* Couleur des titres */
     }
     .section {
       margin-bottom: 2rem;
+      color: #fff; /* Texte des sections en blanc pour plus de contraste */
     }
     .highlight {
       background-color: #ffeb3b;
       padding: 0.2rem 0.4rem;
       border-radius: 3px;
+      color: #333; /* Couleur du texte pour les highlights */
+    }
+    .service-category {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background-color: #555; /* Couleur de fond pour chaque catégorie de service */
+      border-radius: 5px; /* Coins arrondis pour les catégories */
     }
     footer {
       text-align: center;
@@ -115,28 +125,47 @@
   <section id="homepage" class="section">
     <h2>Home Page</h2>
     <p>Quand tu arrives sur la Home Page, tu as plusieurs options qui s'offrent à toi :</p>
-    <ul>
-      <li><strong>Accès au Dashboard</strong> - Clique ici pour gérer tes actions et réactions.</li>
-      <li><strong>Page des Services</strong> - Explore et connecte les différents services.</li>
-    </ul>
+    <p><strong>Accès au Dashboard</strong> - Clique ici pour gérer tes actions et réactions.</p>
+    <p><strong>Page des Services</strong> - Explore et connecte les différents services.</p>
   </section>
 
   <section id="services" class="section">
     <h2>Les Services</h2>
-    <p>Sur la page des services, plusieurs catégories sont disponibles :</p>
-    <ul>
-      <li><strong>Section OAuth</strong> - Connecte AREA à d'autres services pour plus de possibilités.</li>
-      <li><strong>ActionModel</strong> - Crée des modèles d'action (c'est pour les développeurs ou pour nous, les pros de la plateforme).</li>
-      <li><strong>Action</strong> - Remplis des champs pour configurer une action en fonction de ton modèle d'action.</li>
-      <li><strong>ReactionModel</strong> - Pareil, mais pour les réactions.</li>
-      <li><strong>Reaction</strong> - Configure les réactions que tu veux en fonction de tes modèles.</li>
-      <li><strong>AREA</strong> - C'est là que la magie opère ! Crée ton service d'action-réaction en choisissant quelles actions et réactions tu veux lier.</li>
-    </ul>
+
+    <div class="service-category">
+      <h3>OAuth</h3>
+      <p>Connecte AREA à d'autres services pour plus de possibilités. Cela te permet de gérer facilement tes connexions et d'assurer la sécurité de tes données. Pour ceux qui aiment explorer, l'implémentation d'OAuth est une porte d'entrée vers une intégration avancée avec des API tierces. C'est une étape excitante pour les développeurs souhaitant enrichir leurs fonctionnalités.</p>
+    </div>
+
+    <div class="service-category">
+      <h3>ActionModel</h3>
+      <p>Crée des modèles d'action (c'est pour les développeurs ou pour nous, les pros de la plateforme). Cela t'aidera à structurer tes actions et à les rendre réutilisables. Si tu es aventurier et que tu souhaites expérimenter, tu peux développer tes propres modèles d'action. Cela ouvre la voie à une personnalisation poussée de tes automatisations, te permettant d'ajouter de nouvelles actions selon tes besoins.</p>
+    </div>
+
+    <div class="service-category">
+      <h3>Action</h3>
+      <p>Remplis des champs pour configurer une action en fonction de ton modèle d'action. C'est simple et intuitif, même si tu n'es pas un pro de la tech. Pour les utilisateurs curieux, c'est une opportunité d'explorer comment les différentes actions interagissent entre elles dans le système d'automatisation.</p>
+    </div>
+
+    <div class="service-category">
+      <h3>ReactionModel</h3>
+      <p>Pareil, mais pour les réactions. Crée des modèles de réactions pour automatiser encore plus tes processus. Pour ceux qui aiment le challenge, tu peux concevoir des modèles qui réagissent de manière dynamique aux actions, rendant ton système encore plus intelligent et réactif.</p>
+    </div>
+
+    <div class="service-category">
+      <h3>Reaction</h3>
+      <p>Configure les réactions que tu veux en fonction de tes modèles. Tu as ainsi le contrôle total sur les réponses de ton système. Si tu souhaites personnaliser encore plus ton expérience, tu peux ajouter de nouvelles réactions en fonction de tes besoins et de ceux de tes utilisateurs.</p>
+    </div>
+
+    <div class="service-category">
+      <h3>AREA</h3>
+      <p>C'est là que la magie opère ! Crée ton service d'action-réaction en choisissant quelles actions et réactions tu veux lier. C'est le cœur de l'automatisation. Pour les plus audacieux, c'est une chance d'innover en intégrant de nouvelles actions et réactions que tu peux partager avec la communauté, rendant AREA encore plus puissant.</p>
+    </div>
   </section>
 
   <section id="dashboard" class="section">
     <h2>Dashboard</h2>
-    <p>Le Dashboard, c'est l'endroit où tu peux créer des AREA facilement. Grâce à un système de <strong>nœuds</strong> que tu peux lier avec des traits (comme un jeu !), tout est pensé pour être accessible et intuitif, même si tu n'es pas un pro en tech.</p>
+    <p>Le Dashboard, c'est l'endroit où tu peux créer des AREA facilement. Grâce à un système de <strong>nœuds</strong> que tu peux lier avec des traits (comme un jeu !), tout est pensé pour être accessible et intuitif, même si tu n'es pas un pro en tech. L'ajout d'actions et de réactions personnalisées ici permet de rendre ton expérience encore plus unique.</p>
   </section>
 </div>
 
