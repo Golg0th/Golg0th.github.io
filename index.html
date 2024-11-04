@@ -11,32 +11,33 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #646464;
+      background-color: #000; /* Fond noir pour tout le corps */
       color: #fff; /* Couleur du texte par défaut en blanc */
       line-height: 1.6;
     }
     header {
-      background-color: #8f00b3; /* Couleur du header */
+      background-color: #000; /* Couleur du header */
       color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 0.2rem; /* Réduction du remplissage */
+      font-size: 1.2rem; /* Taille de police réduite */
     }
     nav {
-      background-color: #333;
+      background-color: #333; /* Fond noir pour la barre de navigation */
       color: white;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 0.5rem;
+      padding: 0.3rem; /* Réduction du remplissage */
     }
     nav a {
-      color: white;
+      color: white; /* Lien en blanc */
       text-decoration: none;
       padding: 0.5rem 1rem;
       margin: 0.2rem;
     }
     nav a:hover {
-      background-color: #8f00b3;
+      background-color: #000; /* Changement de couleur au survol */
       border-radius: 5px;
     }
     .container {
@@ -44,18 +45,18 @@
       margin: 2rem auto;
       padding: 1rem;
       box-sizing: border-box;
-      background-color: #444; /* Fond légèrement plus clair pour le conteneur */
+      background-color: #000; /* Fond noir pour le conteneur */
       border-radius: 8px; /* Coins arrondis pour un aspect plus moderne */
     }
     h1, h2, h3 {
-      color: #8f00b3; /* Couleur des titres */
+      color: #fff; /* Couleur des titres en blanc */
     }
     .section {
       margin-bottom: 2rem;
       color: #fff; /* Texte des sections en blanc pour plus de contraste */
     }
     .highlight {
-      background-color: #ffeb3b;
+      background-color: #ffeb3b; /* Fond jaune pour le texte en surbrillance */
       padding: 0.2rem 0.4rem;
       border-radius: 3px;
       color: #333; /* Couleur du texte pour les highlights */
@@ -63,19 +64,20 @@
     .service-category {
       margin-bottom: 1.5rem;
       padding: 1rem;
-      background-color: #555; /* Couleur de fond pour chaque catégorie de service */
+      background-color: #444; /* Couleur de fond pour chaque catégorie de service */
       border-radius: 5px; /* Coins arrondis pour les catégories */
     }
     footer {
       text-align: center;
       padding: 1rem 0;
-      background-color: #333;
+      background-color: #333; /* Fond noir pour le pied de page */
       color: white;
     }
     /* Styles responsives */
     @media (max-width: 768px) {
       header {
-        font-size: 1.5rem;
+        font-size: 1rem; /* Taille de police réduite sur mobile */
+        padding: 0.2rem; /* Réduction du remplissage sur mobile */
       }
       nav {
         flex-direction: column;
@@ -87,11 +89,12 @@
     }
     @media (max-width: 480px) {
       header {
-        padding: 0.5rem;
+        font-size: 0.9rem; /* Taille de police encore plus petite sur mobile */
+        padding: 0.2rem; /* Réduction du remplissage sur mobile */
       }
       nav a {
         padding: 0.5rem;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
       .container {
         margin: 1rem;
